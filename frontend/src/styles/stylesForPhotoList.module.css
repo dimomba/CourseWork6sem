@@ -1,0 +1,7 @@
+.photoList {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    row-gap: 20px;
+}
+
