@@ -1,0 +1,36 @@
+.photo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.416);
+    transition: 0.2s;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo:hover {
+    box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.403);
+    transform: scale(1.02);
+}
+
+.containerOfPhoto {
+    position: relative;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.229);
+}
+
+.containerOfLikeButton {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.containerOfName {
+    margin-top: 5px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
