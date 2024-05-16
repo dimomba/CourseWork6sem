@@ -29,21 +29,9 @@ export function Header() {
         }
     };
 
-    const handleReload = () => {
-      const isPageReloaded = sessionStorage.getItem('pageReloaded');
-
-    if (!isPageReloaded) {
-        sessionStorage.setItem('pageReloaded', true);
-        setTimeout(() => {
-          window.location.reload();
-      }, 1000);
-    }
-  };
-
-
     return (
         <div className={styles.header}>
-            <a onLoad={handleReload} href="/search/" className={styles.logosContainer}><img className={styles.logoImage} src={logo} alt="" /><img className={styles.galleryString} src={galleryString} alt="" /></a>
+            <a href="/search/" className={styles.logosContainer}><img className={styles.logoImage} src={logo} alt="" /><img className={styles.galleryString} src={galleryString} alt="" /></a>
             <div className={styles.searchContainer}>
                 <div className={styles.form}>
                     <input type="text" placeholder="Поиск.." id='searchInput' onKeyDown={handleKeyDown} ref={searchInputRef}/>
